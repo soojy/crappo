@@ -65,6 +65,8 @@ section, header, footer
 .btn-white
     background: white
     color: black
+    &:hover
+        background: #ffffffd0
 .title
     font-size: 40px
     line-height: 150%
@@ -87,7 +89,7 @@ section, header, footer
     background-position-y: bottom
 
     .bg
-        background-image: url('../img/illustration.png')
+        background-image: url('../img/Illustration.png')
         background-repeat: no-repeat
         background-position-x: right
         background-position-y: bottom
@@ -143,6 +145,10 @@ section, header, footer
                         background: #3671E9
                         padding: 14px 32px
                         border-radius: 32px
+                        transition: .3s all
+                        &:hover
+                            background: #2a65da
+
                     span
                         opacity: 0.3
                         border: 1px solid #F2F2F2
@@ -226,7 +232,7 @@ section, header, footer
         margin-top: 100px
         display: flex
         justify-content: end
-        background-image: url('../img/illustrations.png')
+        background-image: url('../img/Illustrations.png')
         background-repeat: no-repeat
         background-position-x: left
         background-position-y: bottom
@@ -428,3 +434,120 @@ section, header, footer
                         opacity: 0.7
                 .item-subtitle
                     color: #FFFFFF
+.subs
+    padding-top: 88px
+    padding-bottom: 88px
+    background: url(../img/subs-bg.png) , linear-gradient(180deg, #2B076E 0%, #0D0D2B 100%)
+    // background-image: url(../img/subs-bg.png)
+    &-wrapper
+        background-color: #3671E9
+        background-image: url(../img/blue-bg.png)
+        background-repeat: no-repeat
+        border-radius: 16px
+        padding: 48px
+        display: flex
+        flex-wrap: wrap
+        justify-content: start
+        align-items: center
+    &-form
+        margin-left: auto
+        .btn
+            padding: 16px 32px
+            margin-left: 40px
+        input
+            border: none
+            padding: 8px 0
+            border-bottom: 1px solid rgba(255, 255, 255, 0.4)
+            font-size: 20px
+            line-height: 150%
+            color: #ffffff
+            background: #00000000
+            &::placeholder
+                color: #ffffff
+                opacity: 1
+    &-title
+        font-weight: bold
+        font-size: 32px
+        line-height: 150%
+        color: #FFFFFF
+    &-subtitle
+        font-weight: normal
+        font-size: 16px
+        line-height: 28px
+        letter-spacing: 0.01em
+        color: #FFFFFF
+        margin-top: 16px
+.footer
+    padding-top: 80px
+    padding-bottom: 80px
+    &-wrapper
+        display: flex
+        justify-content: space-between
+        align-items: start
+        flex-wrap: wrap
+    &-col
+        display: flex
+        justify-content: start
+        align-items: start
+        flex-direction: column
+        h3
+            font-weight: 500
+            font-size: 20px
+            line-height: 150%
+            color: #FFFFFF
+            margin-bottom: 24px
+        a
+            font-size: 16px
+            line-height: 38px
+            color: #F2F2F2
+    &-pay
+        h3
+            font-weight: 500
+            font-size: 32px
+            line-height: 150%
+            color: #FFFFFF
+            margin-bottom: 40px
+        .pay-wrapper
+            display: flex
+            justify-content: start
+            align-items: center
+            flex-wrap: wrap
+            .pay-item
+                background: rgba(224, 224, 224, 0.05)
+                padding: 8px 24px
+                border-radius: 8px
+                width: 96px
+                height: 64px
+                display: flex
+                justify-content: center
+                align-items: center
+                &:nth-child(2)
+                    margin: 0 24px
+
+    &-logo
+        a
+            display: flex
+            justify-content: start
+            align-items: center
+            span
+                font-family: Inter
+                font-style: normal
+                font-weight: 600
+                font-size: 18px
+                line-height: 22px
+                letter-spacing: 0.04em
+                margin-left: 16px
+    &-under
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-top: 120px
+    &-copyright
+        font-size: 16px
+        line-height: 28px
+        letter-spacing: 0.01em
+        color: #FFFFFF
+        mix-blend-mode: normal
+    &-social
+        img
+            margin: 0 16px
